@@ -13,17 +13,6 @@ deb-src http://archive.ubuntu.com/ubuntu/ $UBUNTU_CODENAME karmic multiverse" >>
 apt-get update
 apt-get -y upgrade
 
-# the firewall
-apt-get -y install ufw
-yes | ufw enable
-ufw logging on
-ufw allow 80/tcp
-ufw allow 4000/tcp
-ufw allow 4001/tcp
-ufw allow 4040/tcp
-ufw allow 22
-ufw default deny
-
 # set locale
 locale-gen en_US.UTF-8
 /usr/sbin/update-locale LANG=en_US.UTF-8
