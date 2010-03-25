@@ -7,7 +7,7 @@ set -e -x
 
 # enable repo for java installation
 echo "deb http://us.archive.ubuntu.com/ubuntu/ $UBUNTU_CODENAME multiverse
-deb-src http://archive.ubuntu.com/ubuntu/ $UBUNTU_CODENAME karmic multiverse" >> /etc/apt/sources.list
+deb-src http://archive.ubuntu.com/ubuntu/ $UBUNTU_CODENAME multiverse" >> /etc/apt/sources.list
 
 # update apt and upgrade
 apt-get update
