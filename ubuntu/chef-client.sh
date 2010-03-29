@@ -43,7 +43,7 @@ echo "{
 		\"init_style\": \"runit\",
 		\"path\": \"/srv/chef\",
 		\"serve_path\": \"/srv/chef\",
-		\"server_fqdn\": \"$SERVER_FQDN\",
+		\"server_fqdn\": \"$SERVER_FQDN\"
 		}
 	},
 	\"run_list\": [ \"recipe[bootstrap::client]\" ]
