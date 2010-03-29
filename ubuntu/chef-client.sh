@@ -18,7 +18,7 @@ locale-gen en_US.UTF-8
 /usr/sbin/update-locale LANG=en_US.UTF-8
 
 # install chef prereqs
-apt-get -y install ruby ruby1.8-dev libopenssl-ruby1.8 rdoc ri irb build-essential wget ssl-cert
+apt-get -y install ruby ruby1.8-dev libopenssl-ruby1.8 libshadow-ruby1.8 rdoc ri irb build-essential wget ssl-cert
 
 # install rubygems from source
 cd /tmp
