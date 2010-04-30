@@ -1,6 +1,6 @@
 #!/bin/bash
 
-UBUNTU_CODENAME="karmic"
+UBUNTU_CODENAME="lucid"
 SERVER_FQDN="chef.bytexbyte.com"
 
 set -e -x
