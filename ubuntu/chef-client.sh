@@ -6,8 +6,7 @@ SERVER_FQDN="chef.bytexbyte.com"
 set -e -x
 
 # enable repo for java installation
-echo "deb http://us.archive.ubuntu.com/ubuntu/ $UBUNTU_CODENAME multiverse
-deb-src http://archive.ubuntu.com/ubuntu/ $UBUNTU_CODENAME multiverse" >> /etc/apt/sources.list
+echo "deb http://archive.canonical.com/ $UBUNTU_CODENAME partner" >> /etc/apt/sources.list
 
 # update apt and upgrade
 apt-get update
