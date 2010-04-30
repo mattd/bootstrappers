@@ -43,7 +43,7 @@ echo "{
 		\"path\": \"/srv/chef\",
 		\"serve_path\": \"/srv/chef\",
 		\"server_fqdn\": \"$SERVER_FQDN\",
-		\"webui_enabled\": true
+		\"webui_enabled\": false
 		}
 	},
 	\"run_list\": [ \"recipe[bootstrap::server]\" ]
