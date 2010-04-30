@@ -18,7 +18,7 @@ locale-gen en_US.UTF-8
 /usr/sbin/update-locale LANG=en_US.UTF-8
 
 # install chef prereqs
-apt-get -y install ruby ruby1.8-dev libopenssl-ruby1.8 libshadow-ruby1.8 rdoc ri irb build-essential wget ssl-cert
+apt-get -y install ruby ruby1.8-dev libopenssl-ruby1.8 libshadow-ruby1.8 irb build-essential wget ssl-cert
 
 # install rubygems from source
 cd /tmp
@@ -30,7 +30,7 @@ sudo ln -sfv /usr/bin/gem1.8 /usr/bin/gem
 
 # install chef, chef-server, and ohai
 gem sources -a http://gems.opscode.com
-gem install ohai chef
+gem install ohai chef --no-rdoc --no-ri
 
 echo "file_cache_path '/tmp/chef-solo'
 cookbook_path '/tmp/chef-solo/cookbooks'
