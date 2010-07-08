@@ -1,7 +1,7 @@
 #!/bin/bash
 
 UBUNTU_CODENAME="lucid"
-SERVER_FQDN="chef.bytexbyte.com"
+SERVER_FQDN="https://api.opscode.com/organizations/bytexbyte"
 
 set -e -x
 
